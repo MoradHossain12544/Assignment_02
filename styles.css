@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #230E3D;
+    color: #FFFFFF;
+
+}
+.bar{
+    margin-right: 5px;
+    display: none;
+
+}
+/* Share style */
+.text-color-01{
+    background: linear-gradient(
+        90deg,
+        rgba(247, 233, 63, 1) 0%,
+        rgba(251, 9, 180, 1) 50%,
+        rgba(145, 0, 248, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-color{
+     background: linear-gradient(
+        90deg,
+        rgba(247, 233, 63, 1),
+        rgba(251, 9, 180, 1),
+        rgba(145, 0, 248, 1)
+    );
+}
+
+.section-color{
+    background-color: #1A0B2E;
+    width: 1600px;
+   
+}
+
+.color{
+     background-color:#2e0f52; 
+
+}
+.duration{
+    color: #00FF88;
+}
+/* navbar design */
+nav{ 
+    margin: 0 auto;
+    padding: 16px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>h1{
+    width: 219px;
+    height: 32px;
+}
+.menu-container{ 
+   display: flex;
+   gap: 32px;
+   align-items: center;
+}
+.btn{
+    font-weight: 600px;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn1{
+    margin-top: 24px;
+    
+    text-align: center;
+    left: 622px;
+}
+.btn-2{
+    
+    background-color: transparent;
+    color: #00FF88;
+    padding: 12px 30px;
+    border: 1px solid #00FF88;
+    border-radius: 20px;
+    gap: 16px;
+    cursor: pointer;
+    font-weight: 600px;
+}
+
+
+.banner-container{ 
+   text-align: center;
+   position:relative;
+   left: -20px;
+   top: 20px;
+   
+
+  
+}
+
+
+.hero-circle{
+    position: absolute;
+    top: 140px;
+   left:625px ;
+}
+.mic{
+    position: absolute;
+     top: 217px;
+   left:740px ;
+}
+.banner-title{
+    position: absolute;
+    top: 420px;
+    left:525px;
+    width: 550px;
+    text-align: center;
+    margin:0 auto ; 
+   margin-top: 120px;
+}
+.banner-title>h1{
+width: 550px;
+height: 72px;
+font-style: Bold;
+font-size: 60px;
+font-weight: 800;
+text-align: center;
+margin:0 auto ;
+
+
+}
+.animat>h4{
+    padding: 8px 16px;
+}
+.animat{
+    width: 75px;
+    height: 38px;
+    border-radius: 1000px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    text-align: center;
+    position: absolute;
+    left: 893px;
+    top: 168px;
+   animation: myAnimation .2s ease-in-out infinite ;
+
+   
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: #00FF88;
+}
+  to {
+    background-color: rgb(255, 0, 102);
+}
+}
+.about-section{
+    width: 100%;
+    max-width: 1600px;
+    padding-top: 50px;
+    margin:0 400px;
+    max-width: 1200px;
+    width: 50%;
+    text-align: center;
+
+
+}
+.card-section{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin: 160px 200px;
+    padding-bottom:120px ;
+ 
+}
+h2{
+    color: #00FF88;
+    font-style: Black;
+    font-size: 48px;
+    font-weight: 800;
+
+}
+.techwave{
+     padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.techwave>h1{
+     text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+ 
+}
+.icon{
+    margin-top: 90px;
+
+     
+}
+ .card-1{
+   grid-column: 1;
+   grid-row: span 2;
+   width: 380px;
+   height: 480px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items:flex-start;
+   gap: 16px;
+   padding: 40px ;
+   border-radius: 40px;
+}
+ .card-2,.card-3{
+    width: 790px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 40px;
+     border-radius: 40px;
+}
+
+
+
+  
+ .cards-2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 30px;
+    margin-top:25px ;
+ }
+  .card-4{
+    width: 790px;
+    height: 273px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 40px;
+     border-radius: 40px;
+
+ }  
+
+.card-5{
+  width: 380px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 40px;
+  border-radius: 40px;  
+
+   
+
+} 
+.feature-container{
+    background-color: #1A0B2E;
+    width: 1600px;
+    height: 1277px;
+}
+.feature{
+  margin: 100px 200px;
+  padding-top: 120px;
+text-align: center;
+}
+
+.vedio-section{
+    width: 1200px;
+    height: 538px;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+    margin: 0 200px;
+}
+.view-card{
+  border: 1px solid #1A0B2E;
+  background-color: #2e0f52;
+   width: 380px;
+   height: 480px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items:start;
+   gap: 16px;
+   padding: 40px ;
+   border-radius: 40px;
+  
+
+}
+
+
+.host-bar{
+   
+    text-align: center;
+    margin: 50px 410px;
+}
+.host{
+width: 1200px;
+height: 280px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 24px;
+padding: 40px;
+border-radius: 40px;
+background:#230E3D;
+margin:40px 200px 120px;
+    
+}
+.about-host{
+width: 896px;
+height: 183px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 16px;
+
+}
+.online-icon{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 18px;
+ 
+  
+
+}
+.online-icon>img{
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+
+
+}
+.footer-container{
+
+width: 1360px;
+height: 172px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 32;
+position: absolute;
+top:4100px;
+left:120px;
+   
+}
+.footer-container>h1{
+width: 650px;
+height: 72px;
+font-style: Bold;
+font-size: 60px;
+font-weight: 800;
+text-align: center;
+margin:0 auto ;
+}
+.footer-icon{
+   display: flex;
+   justify-content: space-around;
+    align-items:center;
+    gap: 60px;
+    margin: 30px;
+
+}
+.icon-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+
