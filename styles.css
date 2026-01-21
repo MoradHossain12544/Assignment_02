@@ -856,6 +856,61 @@ margin:0 auto ;
         font-size: 13px;
     }
     
+    .host-bar {
+        margin: 40px 20px;
+        font-size: 26px;
+    }
     
+    .host {
+        width: calc(100% - 40px);
+        margin: 30px 20px 60px;
+        padding: 24px;
+    }
+    
+    .host > img {
+        max-width: 180px;
+    }
+    
+    .about-host h3 {
+        font-size: 18px;
+    }
+    
+    .about-host p {
+        font-size: 13px;
+    }
+    
+    .online-icon {
+        gap: 12px;
+    }
+    
+    .online-icon > img {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+    
+    .footer-container {
+        padding: 30px 20px;
+    }
+    
+    .footer-container > h1 {
+        font-size: 28px;
+    }
+    
+    .footer-icon {
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .icon-name {
+        gap: 12px;
+    }
+    
+    .footer-container > div:last-child p {
+        font-size: 12px;
+    }
 }
 
