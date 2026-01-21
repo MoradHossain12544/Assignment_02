@@ -21,8 +21,7 @@ body{
         90deg,
         rgba(247, 233, 63, 1) 0%,
         rgba(251, 9, 180, 1) 50%,
-        rgba(145, 0, 248, 1) 100%
-    );
+        rgba(145, 0, 248, 1) 100% );
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -38,7 +37,9 @@ body{
 
 .section-color{
     background-color: #1A0B2E;
-    width: 1600px;
+    max-width: 1600px;
+    width: 100%;
+    
    
 }
 
@@ -391,16 +392,21 @@ margin:0 auto ;
         max-width: 100%;
     }
     
-    . .background-banner {
+    .background-banner {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        overflow: hidden;
+        height: 100%;
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: center;
+        overflow: hidden;
+        
     }
     
-    .background-banner img {
-        width: 100% !important;
+    .banner-container img {
+        width: 100% ;
         max-width: 100%;
         height: auto;
         object-fit: cover;
@@ -640,5 +646,216 @@ margin:0 auto ;
         display: block;
         margin: 0;
     }
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav {
+        padding: 16px 20px;
+    }
+    
+    nav > h1 {
+        font-size: 22px;
+    }
+    
+    .menu-container,.add {
+        display: none !important;
+    }
+    
+    .bar {
+        display: block !important;
+        font-size: 24px;
+    }
+    
+    
+    .banner-container img{
+        width: 100%;
+        height: 466px;
+        object-fit: cover;
+        object-position: center;
+       
+
+    }
+    
+    .hero-circle {
+        top: 120px;
+        left:45%;
+        transform: translateX(-50%);
+    }
+    
+    .hero-circle img {
+        width: 200px;
+    }
+    
+    .mic {
+        top: 170px;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+    
+    .mic img {
+        width: 60px;
+    }
+    
+    .animat {
+        width: 55px;
+        height: 30px;
+        top: 125px;
+        left: 65%;
+        transform: translateX(-50%);
+    }
+    
+    .animat > h4 {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    
+    .banner-title {
+        top: 220px;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .banner-title > h1 {
+        font-size: 32px;
+        width: 100%;
+    }
+    
+    .banner-title > p {
+        font-size: 14px;
+    }
+    
+    #btn1 {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+      align-items: center;
+    }
+    
+    #btn1 .btn,
+    #btn1 .btn-2 {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .section-color {
+        width: 100% !important;
+    }
+    
+    .about-section {
+        top: 280px;
+        width: 90%;
+        padding: 40px 15px;
+    }
+    
+    .about-section h1 {
+        font-size: 26px;
+    }
+    
+    .about-section p {
+        font-size: 14px;
+    }
+    
+    .card-section {
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    .techwave {
+        padding: 40px 20px;
+    }
+    
+    .techwave > h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .cards {
+        gap: 20px;
+    }
+    
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5 {
+        width: 100% !important;
+        padding: 24px;
+        border-radius: 24px;
+        height: auto;
+    }
+    
+    .card-1 h3,
+    .card-2 h3,
+    .card-3 h3,
+    .card-4 h3,
+    .card-5 h3 {
+        font-size: 18px;
+    }
+    
+    .card-1 p,
+    .card-2 p,
+    .card-3 p,
+    .card-4 p,
+    .card-5 p {
+        font-size: 14px;
+    }
+    
+    .icon img,
+    .card-2 > div img,
+    .card-3 > div img,
+    .card-4 > div img,
+    .card-5 > div img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .cards-2 {
+        gap: 20px;
+    }
+    .feature-container {
+        width: 100% !important;
+    }
+    
+    .feature {
+        margin: 40px 20px;
+        padding-top: 50px;
+    }
+    
+    .feature h1 {
+        font-size: 26px;
+    }
+    
+    .vedio-section {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        gap: 24px;
+    }
+    
+    .view-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .view-card iframe {
+        height: 200px;
+    }
+    
+    .view-card h4 {
+        font-size: 16px;
+    }
+    
+    .view-card p {
+        font-size: 13px;
+    }
+    
+    
 }
 
