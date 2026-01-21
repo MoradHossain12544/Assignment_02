@@ -391,7 +391,7 @@ margin:0 auto ;
         max-width: 100%;
     }
     
-    .background-banner {
+    . .background-banner {
         width: 100%;
         overflow: hidden;
         display: flex;
@@ -400,13 +400,13 @@ margin:0 auto ;
     }
     
     .background-banner img {
-        width: 100%;
+        width: 100% !important;
         max-width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
     }
     
-    /* Center hero-circle and mic on banner */
+   
     .hero-circle {
         position: absolute;
         left: 50%;
@@ -547,6 +547,98 @@ margin:0 auto ;
         height: 300px;
     }
     
-  
+    .host-bar {
+        margin: 50px 40px;
+    }
+    
+    .host {
+        width: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin: 40px 40px 80px;
+    }
+    
+    .host > img {
+        max-width: 250px;
+    }
+    
+    .about-host {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    
+    .online-icon {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+    
+    
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+        overflow: hidden;
+    }
+    
+    .background-footer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      
+    }
+    
+    .background-footer img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .footer-container {
+        position: relative ;
+        width: 100% ;
+        max-width: 1200px ;
+        height: auto ;
+        top: 0;
+        left: 50% ;
+        transform: translateX(-50%) ;
+        margin: 0 auto;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+    }
+    
+    .footer-container > h1 {
+        width: auto ;
+        height: auto ;
+        margin: 0;
+        display: block;
+    }
+    
+    .footer-icon {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+    
+    .footer-container > div:last-child {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-container > div:last-child p {
+        display: block;
+        margin: 0;
+    }
 }
 
